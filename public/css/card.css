@@ -1,0 +1,38 @@
+.card{
+    margin: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    box-shadow: 1px 1px 2px 0px rgba(61, 61, 61, 0.452); 
+    flex-basis: 30%;
+}
+
+.card-cadastro{
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #f0f0f0 ;
+    box-shadow: 1px 1px 2px 0px rgba(61, 61, 61, 0.452); 
+}
+.form-noticia{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    margin: 15px 0px;
+}
+
+.form-control{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.titulo{
+    text-align: center;
+}
+
+.categoria{
+    text-align: center;
+    
+}
+
+
