@@ -9,3 +9,6 @@ Usei HTML, CSS e PHP.
 Quando vi os videos da DevMedia, vi que fizeram um teste e resolvi fazer esse teste, nao fiz em 4hrs, mas só de estar funcionando já é um grande avanço.
 
 O code está disponivel para o publico.
+
+
+Fiz um backup do DB para quem quiser ver como funciona.
