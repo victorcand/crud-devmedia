@@ -9,7 +9,7 @@ class Database
 {
     const HOST = "localhost";
     const USERNAME = "root";
-    const PASS = "VcA01289200";
+    const PASS = "";
     const DBNAME = "devmedia";
 
     /**
