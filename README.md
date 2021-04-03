@@ -2,7 +2,7 @@
 
 Primeiro projeto!!
 
-Fiz diversos cursos desde dezembro, estou com me sentindo realizado por fazer este projeto funcionar!
+Fiz diversos cursos desde dezembro de 2020 e com esses conhecimentos adquiridos consegui desenvolver este projeto, estou me sentindo realizado por fazer este projeto funcionar!
 
 Usei HTML, CSS, PHP e Mysql.
 
