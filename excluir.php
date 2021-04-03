@@ -15,7 +15,6 @@ $obNoticia = Noticia::getNoticia($_GET['id']);
 
 
 //VALIDAÇÃO DA VAGA
-
 if(!$obNoticia instanceof Noticia){
     header('location: index.php?status=error');
     exit;
@@ -23,10 +22,9 @@ if(!$obNoticia instanceof Noticia){
 
 
 //VALIDAÇÃO DO POST
-
 if(isset($_POST['excluir'])){
     $obNoticia->excluir();
-    header('Location: index.php?status=success');
+    header('Location: index.php?status=excluir');
     exit;
 }
 

@@ -16,7 +16,7 @@
 
         <nav class="nav">
             <div>
-                <a href="index.php" ><button class="btn btn-success">Home</button></a>
+                <a href="index.php"><button class="btn btn-success">Home</button></a>
                 <a href="cadastrar.php"><button class="btn btn-success">Cadastrar Noticia</button></a>
             </div>
 
@@ -27,5 +27,5 @@
                 </div>
             </form>
         </nav>
-        
+
     </header>

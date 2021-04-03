@@ -7,6 +7,14 @@ if (isset($_GET['status'])) {
             $mensagem = '<div class="success">Ação executada com sucesso!</div>';
             break;
 
+        case 'cadastro':
+            $mensagem = '<div class="success">Cadastro realizado com sucesso!</div>';
+            break;
+
+        case 'editar':
+            $mensagem = '<div class="success">Alteração realizada com sucesso!</div>';
+            break;
+
         case 'error':
             $mensagem = '<div class="danger">Ação não executada!</div>';
             break;
@@ -17,11 +25,11 @@ if (isset($_GET['status'])) {
 
 <main class="principal-form">
 
-    <!-- <section class="conteudo"> -->
     <div class="card-cadastro">
+    
         <?=$mensagem?>
-        <h2><?=TITLE?></h2>
 
+        <h2><?=TITLE?></h2>
 
         <form method="post">
             <div class="label-float">
@@ -49,6 +57,4 @@ if (isset($_GET['status'])) {
 
     </div>
 
-
-    <!-- </section> -->
 </main>

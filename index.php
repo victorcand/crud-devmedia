@@ -4,7 +4,6 @@ require __DIR__ . "/vendor/autoload.php";
 
 use \App\Entity\Noticia;
 
-
 //BUSCA
 $busca = filter_input(INPUT_GET,'busca',FILTER_SANITIZE_STRING);
 
@@ -15,7 +14,6 @@ $condicao = [
 
 //CLAUSALA WHERE 
 $where = implode($condicao);
-// echo "<pre>"; print_r($where);echo "</pre>";exit;
 
 $noticias = Noticia::getNoticias($where,'id DESC');
 

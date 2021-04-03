@@ -9,7 +9,7 @@ class Database
 {
     const HOST = "localhost";
     const USERNAME = "root";
-    const PASS = "VcA01289200";
+    const PASS = "";
     const DBNAME = "devmedia";
 
     /**
@@ -82,7 +82,6 @@ class Database
     public function insert($values)
     {
         //DADOS DA QUERY
-
         $fields = array_keys($values);
         $binds = array_pad([], count($fields), '?');
 
@@ -131,8 +130,8 @@ class Database
         $fields = array_keys($values);
 
         //MONTA QUERY
-        $query = 'UPDATE ' . $this->table . ' SET '.implode('=?,',$fields).'=? WHERE ' . $where;
-        
+        $query = 'UPDATE ' . $this->table . ' SET ' . implode('=?,', $fields) . '=? WHERE ' . $where;
+
         //EXECUTAR A QUERY
         $this->execute($query, array_values($values));
 
@@ -150,8 +149,8 @@ class Database
     public function delete($where)
     {
         //MONTA A QUERY
-        $query = 'DELETE from '.$this->table.' WHERE ' .$where; 
-    
+        $query = 'DELETE from ' . $this->table . ' WHERE ' . $where;
+
         //EXECUTA A QUERY
         $this->execute($query);
 

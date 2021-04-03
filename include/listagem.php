@@ -7,6 +7,10 @@ if (isset($_GET['status'])) {
             $mensagem = '<div class="success">Ação executada com sucesso!</div>';
             break;
 
+        case 'excluir':
+            $mensagem = '<div class="success">Notícia excluída com sucesso!</div>';
+            break;
+
         case 'error':
             $mensagem = '<div class="danger">Ação não executada!</div>';
             break;
@@ -44,12 +48,13 @@ foreach ($noticias as $noticia) {
 }
 
 if (strlen($resultados)) {
-    $resultados = '<div class="conteudo">'.$resultados.'</div>';
-    
-} 
+    $resultados = '<div class="conteudo">' . $resultados . '</div>';
 
-if(empty(strlen($resultados))){
-    $resultados .=  '<div class="conteudo-center">
+}
+
+
+if (empty(strlen($resultados))) {
+    $resultados .= '<div class="conteudo-center">
                         <p class="info">Não há <strong>NOTÍCIA</strong> cadastrada.</p>
                     </div>';
 }
